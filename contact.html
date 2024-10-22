@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Glam Goddess</title>
+</head>
+<body>
+    <div class="container">
+		<div class="header">
+			<a href="./index.html">Glam Goddess</a>
+			<span id="menu-icon" onClick="toggleMenu()"><img src="images/menu.svg" /></span>
+			<span id="header-right-menu">
+				<a href="#">Services</a>
+				<a href="#">Products</a>
+				<a href="#">Pricing</a>
+				<a href="#" class="header-active">Contact Us</a>
+			</span>
+		</div>
+		<div class="inner">
+			<div class="tile1">
+				<div class="tile1-heading">Get in touch</div>
+				<div class="form">We are here for you! How can we help?</div>
+				<form>
+					<div class="form">
+						<input type="text" class="field" placeholder="Enter Name">
+					</div>
+					<div class="form">
+						<input type="text" class="field" placeholder="Enter Email">
+					</div>
+					<div class="form">
+						<textarea class="field" placeholder="Ask Your Question?"></textarea>
+					</div>
+					<div class="form">
+						<input type="button" class="field btn" value="Submit">
+					</div>
+				</form>
+			</div>
+			<div class="tile2">
+				<div class="tile2-image">
+					<img src="./images/contact.jpg">
+				</div>
+				<div>
+					<div class="row">
+						<img src="./images/location.jpg" class="image">
+                        <span>Chitkara University</span>
+					</div>
+					<div class="form-row">
+						<img src="./images/phone.jpg" class="image"><span>+911234567893</span>
+					</div>
+					<div class="form-row">
+						<img src="./images/mail.jpg" class="image"><span>glamgoddess@gmail.com</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script>
+        function toggleMenu(){
+            var menuElement=document.getElementById("header-right-menu");
+            if(menuElement.style.display==="block"){
+                menuElement.style.display="none";
+            }
+            else{
+                menuElement.style.display="block";
+            }
+        }
+    </script>
+
+</body>
+</html>
